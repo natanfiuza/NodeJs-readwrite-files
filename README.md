@@ -22,7 +22,7 @@ npm install nodemon jest -D
 Modulos de produção
 
 ```bash
-npm install express fs 
+npm install express fs cors
 ```
 
 
