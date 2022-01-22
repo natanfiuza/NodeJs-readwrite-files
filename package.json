@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security"
+  },
+  "name": "readwrite-files-nodejs",
+  "version": "1.0.0",
+  "description": "Teste de leitura e escrita de arquivos usando o node.js",
+  "main": "server.js",
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "test": "jest --noStackTrace"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/natanfiuza/NodeJs-readwrite-files.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Javascript"
+  ],
+  "author": "NatanFiuza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natanfiuza/NodeJs-readwrite-files/issues"
+  },
+  "homepage": "https://github.com/natanfiuza/NodeJs-readwrite-files#readme"
+}
