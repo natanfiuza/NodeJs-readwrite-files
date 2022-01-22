@@ -4,11 +4,14 @@ Utilizando requisições API
 
 ## Insomnia
 
+Execute os teste usando o Insomnia com o botão abaixo:
 
-## Git
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=ReadWrite%20File%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fnatanfiuza%2FNodeJs-readwrite-files%2Fmaster%2FInsomnia.json)
 
-git@github.com:natanfiuza/NodeJs-readwrite-files.git
-
+## Executar o projeto
+```bash
+npm run dev
+```
 ## Bibliotecas Node.js
 
 Modulos de desenvolvimento
@@ -19,7 +22,7 @@ npm install nodemon jest -D
 Modulos de produção
 
 ```bash
-npm install express
+npm install express fs 
 ```
 
 
