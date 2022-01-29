@@ -1,12 +1,19 @@
 const express = require("express");
-const WriteController = require("./controllers/write.controlle.js");
-const ReadController = require("./controllers/read.controlle.js"); 
-
 const app = express();
+const bodyParser = require("body-parser");
+const showdown = require("showdown");
+const { readFileSync } = require("fs");
+const routerUser = require("../src/routes/user");
 
-app.use(express.json());
 
-app.post("/api/create", WriteController.execute);
-app.get("/api/list", ReadController.execute);
+app.use(bodyParser.json());
 
+app.use("/user", routerUser);
+
+app.get("/help", function (req, res) {
+  const dataRead = readFileSync("README.md").toString("utf8");
+  converter = new showdown.Converter();
+  res.type("text/html");
+  res.send(converter.makeHtml(dataRead));
+});
 module.exports = app;
