@@ -36,6 +36,15 @@ Retorna este mesmo arquivo.
 - `name`: Nome do usuário
 - `email`: E-mail do usuário
 - `phone`: Telefone do usuário
+  
+```json
+{
+	"name": "Nataniel Fiuza",
+	"email": "n@taniel.com.br",
+	"phone": "+55 83 996812716"
+}
+
+```
 ### Response: Status 201 Created
 
 Retorna o registro com id (auto incremento) e createdAt (data de criação do registro)
