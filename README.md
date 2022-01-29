@@ -3,6 +3,7 @@ Projeto para testes de leitura e escrita de arquivos no Node.js
 Utilizando requisições API 
 
 ## Routers
+
 ### Get `/help`
 
 ### Response: Status 200
@@ -10,7 +11,7 @@ Utilizando requisições API
 Retorna este mesmo arquivo.
 
 ---
-### Post `/user`
+### Get `/user`
 
 ### Response: Status 200
 
@@ -30,6 +31,8 @@ Retorna este mesmo arquivo.
 	"page": 1
 }
 ```
+
+---
 ### Post `/user`
 
 ### Regras:
