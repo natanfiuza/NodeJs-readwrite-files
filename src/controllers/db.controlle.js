@@ -8,14 +8,13 @@ class DBController {
 
   static read(table) {
     if (!existsSync(DBController.dbfilename)) {
-        let obj = {};
-        obj[table] = [];
-        appendFile(DBController.dbfilename, JSON.stringify(obj), (err) => {
-          if (err) throw err;
-          console.log('The "data to append" was appended to file!');
-        });
-       
-    } 
+      let obj = {};
+      obj[table] = [];
+      appendFile(DBController.dbfilename, JSON.stringify(obj), (err) => {
+        if (err) throw err;
+        console.log('The "data to append" was appended to file!');
+      });
+    }
     const dataRead = readFileSync(DBController.dbfilename);
 
     if (dataRead.length !== 0) {
@@ -31,6 +30,14 @@ class DBController {
   }
 
   static writeAdd(table, value) {
+    if (!existsSync(DBController.dbfilename)) {
+      let obj = {};
+      obj[table] = [];
+      appendFile(DBController.dbfilename, JSON.stringify(obj), (err) => {
+        if (err) throw err;
+        console.log('The "data to append" was appended to file!');
+      });
+    }
     const dataRead = readFileSync(DBController.dbfilename);
 
     if (dataRead.length !== 0) {
