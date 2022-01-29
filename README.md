@@ -105,7 +105,7 @@ npm install nodemon jest -D
 Modulos de produção
 
 ```bash
-npm install express fs cors
+npm install express fs cors showdown
 ```
 
 
